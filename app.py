@@ -18,7 +18,7 @@ import numpy as np
 from tqdm import tqdm
 from pdf2image import convert_from_path
 
-from rag_code import EmbedData, QdrantVDB_QB, Retriever, RAG
+from rag_pipeline import EmbedData, QdrantVDB_QB, Retriever, RAG
 
 collection_name = "multimodal_rag_with_deepseek-new"
 
