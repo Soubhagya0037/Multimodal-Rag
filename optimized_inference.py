@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 from typing import List, Union
 import logging
-from colpali_loader import ColPaliLoader
+from embedder import ColPaliLoader
 
 logger = logging.getLogger(__name__)
 
