@@ -1,0 +1,27 @@
+# Model configurations
+embed_model: "vidore/colpali-v1.2"
+llm_model: "deepseek-ai/Janus-Pro-1B"
+
+# HPC-ColPali settings (set to null or remove to disable)
+hpc_kwargs:
+  k_centroids: 256
+  prune_ratio: 0.4 # keep 60% of patches
+
+# Vector database
+qdrant_url: "http://localhost:6334"
+collection_name: "multimodal_rag"
+vector_dim: 128
+
+# Processing parameters
+embed_batch_size: 4
+ingest_batch_size: 4
+max_new_tokens: 4096
+
+# Optimization settings
+use_flash_attention: true
+use_mixed_precision: true
+offload_dir: "./offload"
+
+# Logging
+log_level: "INFO"
+log_file: "multimodal_rag.log"
